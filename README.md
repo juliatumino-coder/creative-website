@@ -30,10 +30,17 @@ In repository Settings → Pages → Build and deployment, select **GitHub Actio
 To retry deployment, open Actions → Deploy Meadow to GitHub Pages → Run workflow
 and choose `main`.
 
-## Template behavior
+## Product gallery
 
-The original source is preserved except for deployment asset paths. The navbar
-changes its highlighted link. Its fragment links have no corresponding content
-sections in the supplied template. The waitlist form prevents submission and
-does not store email addresses or connect to a backend. The supplied fixed-width
-navigation can overlap on narrow screens; its layout is preserved as requested.
+The Products navigation link opens a BAGSMART Blast 28L backpack section.
+Six official Beige product photographs support thumbnails, swipe, and arrow-key
+navigation. This is a multi-view gallery, not a 360-degree scan; the supplier
+provided no continuous rotation sequence or 3D model. Price: $69.99 USD, verified
+October 2, 2026. Purchase and current pricing are handled by BAGSMART.
+
+Source: https://www.bagsmart.com/products/28l-blast-travel-backpack?variant=41324879970386
+Product data: https://www.bagsmart.com/products/28l-blast-travel-backpack.js
+
+The original hero remains intact. Mobile navigation now occupies two rows to
+keep all links accessible. The waitlist remains a demonstration form and does
+not save email addresses. Other original navigation fragments remain placeholders.

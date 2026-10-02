@@ -8,7 +8,7 @@ export default function Navbar() {
   const [active, setActive] = useState('How it works?')
 
   return (
-    <motion.div
+    <motion.div className="meadow-navbar"
       initial={{ opacity: 0, y: -16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }}
       style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '22px 40px' }}
     >
@@ -21,7 +21,7 @@ export default function Navbar() {
       </div>
 
       {/* Centered frosted link pill */}
-      <div
+      <div className="meadow-navlinks"
         style={{
           position: 'absolute', left: '50%', transform: 'translateX(-50%)',
           display: 'flex', alignItems: 'center', gap: '2px', padding: '6px',

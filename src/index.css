@@ -18,3 +18,22 @@
   #root { width: 100%; min-height: 100svh; }
   .meadow-input::placeholder { color: rgba(255,255,255,0.85); }
 }
+
+.product-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 72px; }
+.product-viewer { position: relative; height: 570px; background: #f3efec; border-radius: 24px; overflow: hidden; touch-action: pan-y; }
+.view-controls { position: absolute; bottom: 16px; left: 16px; right: 16px; display: flex; align-items: center; justify-content: space-between; border-radius: 999px; padding: 6px; background: rgba(255,255,255,.88); backdrop-filter: blur(12px); }
+.view-controls button { width: 36px; height: 36px; border: 0; background: transparent; border-radius: 50%; cursor: pointer; }
+.product-thumbnails { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-top: 14px; }
+.product-thumbnails button { aspect-ratio: 3 / 4; overflow: hidden; border-radius: 10px; border: 2px solid transparent; cursor: pointer; }
+.product-thumbnails button[aria-pressed="true"] { border-color: #617052; }
+.products-section :focus-visible { outline: 3px solid #617052; outline-offset: 3px; }
+@media (max-width: 760px) {
+  .product-grid { grid-template-columns: 1fr; gap: 32px; }
+  .product-viewer { height: 440px; }
+  .meadow-navbar { padding: 16px 20px !important; }
+  .meadow-navlinks { top: 74px; max-width: calc(100vw - 24px); }
+  .meadow-navlinks a { padding: 8px 12px !important; }
+}
+@media (max-width: 760px) {
+  .products-section { padding-top: 160px !important; }
+}
